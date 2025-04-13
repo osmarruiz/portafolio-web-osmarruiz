@@ -18,6 +18,7 @@ const { title, description } = Astro.props;
 <html lang="es">
   <head>
     <MainHead title={title} description={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <div class="stack layout-wrapper"> <!-- Fondo de líneas de código -->
@@ -53,9 +54,9 @@ const { title, description } = Astro.props;
   top: 0;
   left: 0;
   width: 80%;
-  height: 120%;
-  transform: rotate(110deg);
-  z-index: 1;
+  height: 180%;
+  transform: rotate(130deg);
+  z-index: 0;
 }
 
 .star {

@@ -1,6 +1,7 @@
 /* Global variables */
 :root {
   /* Colors */
+  --background: radial-gradient(ellipse at top right, #ff9393 0%, #ffffff 30%);
   --gray-0: #090b11;
   --gray-50: #141925;
   --gray-100: #283044;
@@ -20,7 +21,7 @@
    --accent-light: #f05d5d;        /* Rojo suave y luminoso, más suave que el anterior */
 --accent-regular: #ee1b1b;      /* Rojo vibrante, pero ligeramente más profundo */
 --accent-dark: #cc0f0f;         /* Rojo oscuro profundo, para un contraste más equilibrado */
---accent-overlay: hsla(0, 100%, 50%, 0.15);/* Overlay rojo */
+--accent-overlay: hsla(0, 100%, 50%, 0.384);/* Overlay rojo */
    --accent-subtle-overlay: var(--accent-overlay);
    --accent-text-over: var(--gray-999);  /* Blanco para el texto */
  
@@ -52,6 +53,7 @@
   --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
     0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
     0px 2px 4px rgba(9, 11, 17, 0.06);
+    
   --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
     0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
     0px 4px 9px rgba(9, 11, 17, 0.12);
@@ -98,7 +100,7 @@
   --accent-dark: #a50f0f;         /* Rojo profundo, perfecto para elementos de fondo o énfasis */
   
   --accent-overlay: hsla(0, 100%, 55%, 0.15); /* Overlay sutil, no tan fuerte */
-  --accent-subtle-overlay: hsla(0, 100%, 45%, 0.1); /* Menos opacidad para suavizar el contraste */
+  --accent-subtle-overlay: hsla(0, 100%, 50%, 0.384); /* Menos opacidad para suavizar el contraste */
   --accent-text-over: #ffffff; /* Texto blanco para mejorar legibilidad */
 
   /* Links */

@@ -31,13 +31,19 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hola, mi nombre es Osmar Ruiz"
-					tagline="Construyendo el futuro digital, una experiencia fluida a la vez."
+					tagline="Construyendo un futuro digital, una experiencia fluida a la vez."
 					align="start"
 				>
+				<div class="hero-content">
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Desarrollador</Pill>
 						<Pill><Icon icon="pencil-line" size="1.33em" /> Dise&ntilde;ador</Pill>
 					</div>
+						<CallToAction href="/Osmar_Ruiz_CV.pdf" download='Osmar_Ruiz_CV.pdf' >
+							Descargar CV
+							<Icon icon="paper-plane-tilt" size="1.2em" />
+						</CallToAction>
+				</div>
 				</Hero>
 
 				<img
@@ -93,6 +99,15 @@ const projects = (await getCollection('work'))
 		gap: 2rem;
 	}
 
+	.hero-content {
+		display: flex;
+		flex-direction: column;
+		gap: 4.5rem;
+		text-align: center;
+		max-width: 35ch;
+
+	}
+
 	
 
 	.roles {
@@ -107,12 +122,28 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-md);
 	}
 
+	.download-button {
+			padding: 0.5rem 1rem;
+			border-radius: 999rem;
+			color: var(--gray-100);
+			background-color: var(--accent-subtle-overlay);
+			transition:
+				color var(--theme-transition),
+				background-color var(--theme-transition);
+			text-decoration: none;
+		}
+
+		.download-button:hover,
+		.download-button:focus {
+			color: var(--gray-100);
+			background-color: var(--accent-subtle-overlay);
+		}
+
 	@media (min-width: 50em) {
 		.hero {
 			display: grid;
 			grid-template-columns: 6fr 4fr;
-			padding-inline: 2.5rem;
-			gap: 3.75rem;
+			gap: 4.75rem;
 		}
 
 		.roles {
