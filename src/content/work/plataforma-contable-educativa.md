@@ -1,8 +1,8 @@
 ---
 title: 📘 Plataforma Contable Educativa
 publishDate: 2020-03-02 00:00:00
-img: /assets/works/plataforma-contable-educativa.png
-img_hover: /assets/works/plataforma-contable-educativa-hover.png
+img: /assets/works/plataforma-contable-educativa.webp
+img_hover: /assets/works/plataforma-contable-educativa-hover.webp
 img_alt: Interfaz moderna de una plataforma contable educativa
 description: |
   Una plataforma web desarrollada en .NET que refuerza las competencias contables en estudiantes mediante la práctica interactiva.
