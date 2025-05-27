@@ -1,30 +1,82 @@
-# Astro Starter Kit: Portfolio
+# Osmar Ruiz - Portfolio Website
 
-```sh
-npm create astro@latest -- --template portfolio
+A modern portfolio website built with Astro.js, showcasing my experience in developing educational and administrative web applications. This portfolio highlights my work in creating innovative solutions for educational institutions.
+
+## 🛠️ Technical Skills Demonstrated
+
+- **Frontend**: React.js, TypeScript, Tailwind CSS
+- **Backend**: Go (Golang), .NET, C#
+- **Databases**: PostgreSQL
+- **Tools & Platforms**: Astro.js, Cloudflare
+- **Design**: Responsive UI/UX, Interactive Components
+
+## 📁 Portfolio Structure
+
+```
+src/
+├── components/           # UI Components
+│   ├── Hero.astro       # Landing section
+│   ├── Skills.astro     # Skills showcase
+│   ├── PortfolioPreview.astro
+│   └── [Other components]
+├── content/
+│   └── work/           # Project Details
+├── layouts/
+│   └── BaseLayout.astro
+├── pages/
+│   ├── index.astro     # Home page
+│   ├── about.astro     # About me
+│   └── work.astro      # Portfolio items
+└── styles/
+    └── global.css
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+## 🚀 Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. Clone the repository
+\`\`\`bash
+git clone https://github.com/OsmarRuiz/portafolio-web-osmarruiz.git
+cd portafolio-web-osmarruiz
+\`\`\`
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
 
-## 🧞 Commands
+3. Start the development server
+\`\`\`bash
+npm run dev
+\`\`\`
 
-All commands are run from the root of the project, from a terminal:
+Visit \`http://localhost:4321\` to view the site
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 📜 Available Scripts
 
-## 👀 Want to learn more?
+| Command | Action |
+| :--- | :--- |
+| \`npm run dev\` | Start development server |
+| \`npm run build\` | Build for production |
+| \`npm run preview\` | Preview production build |
+| \`npm run astro\` | Run Astro commands |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🔧 Technologies
+
+- **[Astro](https://astro.build/)** v4.16.10
+- **[Cloudflare](https://cloudflare.com)** (@astrojs/cloudflare v11.2.0)
+- **TypeScript** for type safety
+- **CSS3** for styling
+
+## 📫 Contact
+
+Want to discuss a project or opportunity? Reach out through:
+- GitHub: [@OsmarRuiz](https://github.com/OsmarRuiz)
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🙏 Acknowledgments
+
+- Astro.js community
+- Open source contributors
