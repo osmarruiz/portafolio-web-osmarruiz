@@ -1,7 +1,7 @@
 /* Global variables */
+/* Tema Claro - Base */
 :root {
-  /* Colors */
-  --background: radial-gradient(ellipse at top right, #ff9393 0%, #ffffff 30%);
+  /* Sistema de colores */
   --gray-0: #090b11;
   --gray-50: #141925;
   --gray-100: #283044;
@@ -13,52 +13,71 @@
   --gray-700: #c3cadb;
   --gray-800: #e3e6ee;
   --gray-900: #f3f4f7;
-  --gray-999-basis: 0, 0%, 100%;
-  --gray-999_40: hsla(var(--gray-999-basis), 0.4);
   --gray-999: #ffffff;
 
-   /* Rojos intensos y vibrantes */
-   --accent-light: #f05d5d;        /* Rojo suave y luminoso, más suave que el anterior */
---accent-regular: #ee1b1b;      /* Rojo vibrante, pero ligeramente más profundo */
---accent-dark: #cc0f0f;         /* Rojo oscuro profundo, para un contraste más equilibrado */
---accent-overlay: hsla(0, 100%, 50%, 0.384);/* Overlay rojo */
-   --accent-subtle-overlay: var(--accent-overlay);
-   --accent-text-over: var(--gray-999);  /* Blanco para el texto */
- 
-   /* Links */
-   --link-color: var(--accent-regular);
- 
-   /* Gradientes */
-   --gradient-stop-1: var(--accent-light);   /* Rojo claro */
-   --gradient-stop-2: var(--accent-regular); /* Rojo vibrante */
-   --gradient-stop-3: var(--accent-dark);    /* Rojo oscuro */
-   --gradient-subtle: linear-gradient(
-	 150deg,
-	 var(--gray-900) 19%,
-	 var(--gray-999) 150%
-   );
-   --gradient-accent: linear-gradient(
-	 150deg,
-	 var(--gradient-stop-1),
-	 var(--gradient-stop-2),
-	 var(--gradient-stop-3)
-   );
+  /* Paleta de rojos mejorada */
+  --accent-50: #fff0f0;
+  --accent-100: #ffd8d8;
+  --accent-200: #ffb8b8;
+  --accent-300: #ff9494;
+  --accent-400: #ff6b6b;  /* Light */
+  --accent-500: #ff4757;  /* Regular */
+  --accent-600: #ff2d2d;  /* Dark */
+  --accent-700: #e03131;
+  --accent-800: #c92a2a;
+  --accent-900: #a51d1d;
+  
+  --accent-light: var(--accent-400);
+  --accent-regular: var(--accent-500);
+  --accent-dark: var(--accent-600);
+  --accent-overlay: hsla(355, 100%, 68%, 0.33);
+  --accent-subtle-overlay: hsla(354, 100%, 54%, 0.18);
+  --accent-text-over: var(--gray-999);
 
-  --gradient-stroke: linear-gradient(180deg, var(--gray-900), var(--gray-700));
+  /* Fondos */
+  --background: radial-gradient(125% 125% at 50% 90%, #fff 40%, #475569 100%);
+  --surface: var(--gray-999);
+  --surface-elevated: linear-gradient(
+    to bottom,
+    var(--gray-999),
+    var(--gray-900)
+  );
 
-  /* Shadows */
+  
+
+  /* Gradientes */
+  --gradient-stop-1: var(--accent-400);
+  --gradient-stop-2: var(--accent-500);
+  --gradient-stop-3: var(--accent-600);
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--gradient-stop-1),
+    var(--gradient-stop-2),
+    var(--gradient-stop-3)
+  );
+  --gradient-subtle: linear-gradient(
+    150deg,
+    var(--gray-900) 19%,
+    var(--gray-999) 150%
+  );
+
+  /* Sombras */
   --shadow-sm: 0px 6px 3px rgba(9, 11, 17, 0.01),
     0px 4px 2px rgba(9, 11, 17, 0.01), 0px 2px 2px rgba(9, 11, 17, 0.02),
     0px 0px 1px rgba(9, 11, 17, 0.03);
   --shadow-md: 0px 28px 11px rgba(9, 11, 17, 0.01),
     0px 16px 10px rgba(9, 11, 17, 0.03), 0px 7px 7px rgba(9, 11, 17, 0.05),
     0px 2px 4px rgba(9, 11, 17, 0.06);
-    
   --shadow-lg: 0px 62px 25px rgba(9, 11, 17, 0.01),
     0px 35px 21px rgba(9, 11, 17, 0.05), 0px 16px 16px rgba(9, 11, 17, 0.1),
     0px 4px 9px rgba(9, 11, 17, 0.12);
+  --shadow-accent: 0 4px 14px -2px rgba(255, 71, 87, 0.4);
 
-  /* Text Sizes */
+  /* Tipografía */
+  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-body: "Public Sans", var(--font-system);
+  --font-brand: Rubik, var(--font-system);
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-md: 1.125rem;
@@ -69,18 +88,14 @@
   --text-4xl: 3.5rem;
   --text-5xl: 4.5rem;
 
-  /* Fonts */
-  --font-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  --font-body: "Public Sans", var(--font-system);
-  --font-brand: Rubik, var(--font-system);
-
-  /* Transitions */
-  --theme-transition: 0.2s ease-in-out;
+  /* Transiciones */
+  --theme-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-hover: all 0.2s ease-out;
 }
 
+/* Tema Oscuro */
 :root.theme-dark {
-  --background: radial-gradient(ellipse, #421414 0%, #000000 70%);
+  /* Sistema invertido */
   --gray-0: #ffffff;
   --gray-50: #f3f4f7;
   --gray-100: #e3e6ee;
@@ -92,29 +107,53 @@
   --gray-700: #3d4663;
   --gray-800: #283044;
   --gray-900: #141925;
-  --gray-999-basis: 225, 31%, 5%;
   --gray-999: #090b11;
 
-  --accent-light: #ff4c4c;        /* Rojo claro moderno (para contraste) */
-  --accent-regular: #e60000;      /* Rojo vibrante (ideal para botones y enlaces) */
-  --accent-dark: #a50f0f;         /* Rojo profundo, perfecto para elementos de fondo o énfasis */
+  /* Rojos con más contraste */
+  --accent-50: #2a0505;
+  --accent-100: #4a0a0a;
+  --accent-200: #6f0f0f;
+  --accent-300: #9e1a1a;
+  --accent-400: #ff6b6b;  /* Light */
+  --accent-500: #ff4757;  /* Regular */
+  --accent-600: #e03131;  /* Dark */
+  --accent-700: #c92a2a;
+  --accent-800: #a51d1d;
+  --accent-900: #7a1515;
   
-  --accent-overlay: hsla(0, 100%, 55%, 0.15); /* Overlay sutil, no tan fuerte */
-  --accent-subtle-overlay: hsla(0, 100%, 50%, 0.384); /* Menos opacidad para suavizar el contraste */
-  --accent-text-over: #ffffff; /* Texto blanco para mejorar legibilidad */
+  --accent-light: var(--accent-400);
+  --accent-regular: var(--accent-500);
+  --accent-dark: var(--accent-600);
+  --accent-overlay: hsla(355, 100%, 68%, 0.25);
+  --accent-subtle-overlay: hsla(354, 100%, 54%, 0.15);
+  --accent-text-over: #ffffff;
 
-  /* Links */
-  --link-color: var(--accent-regular);
+  /* Fondos oscuros */
+  --background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255, 80, 120, 0.15), transparent 70%), #000000;
+  --surface: var(--gray-999);
+  --surface-elevated: linear-gradient(
+    to bottom,
+    var(--gray-999),
+    var(--gray-900)
+  );
 
-  /* 🔥 Gradientes en rojo para modo oscuro */
-  --gradient-stop-1: #ff4c4c;    /* Rojo claro para mantener el contraste */
-  --gradient-stop-2: #e60000;    /* Rojo vibrante para énfasis */
-  --gradient-stop-3: #8b0000;    /* Rojo profundo, similar a un efecto de sombra */
-  
-  --gradient-subtle: linear-gradient(150deg, #141925 20%, #090b11 80%); /* Fondo oscuro suave */
-  --gradient-accent: linear-gradient(150deg, #ff4c4c, #e60000, #8b0000);
+  /* Gradientes oscuros */
+  --gradient-stop-1: var(--accent-600);
+  --gradient-stop-2: var(--accent-500);
+  --gradient-stop-3: var(--accent-400);
+  --gradient-accent: linear-gradient(
+    135deg,
+    var(--gradient-stop-1),
+    var(--gradient-stop-2),
+    var(--gradient-stop-3)
+  );
+  --gradient-subtle: linear-gradient(
+    150deg,
+    var(--gray-900) 19%,
+    var(--gray-999) 150%
+  );
 
-
+  /* Sombras invertidas */
   --shadow-sm: 0px 6px 3px rgba(255, 255, 255, 0.01),
     0px 4px 2px rgba(255, 255, 255, 0.01), 0px 2px 2px rgba(255, 255, 255, 0.02),
     0px 0px 1px rgba(255, 255, 255, 0.03);
@@ -125,21 +164,27 @@
     0px 35px 21px rgba(255, 255, 255, 0.05),
     0px 16px 16px rgba(255, 255, 255, 0.1),
     0px 4px 9px rgba(255, 255, 255, 0.12);
+  --shadow-accent: 0 4px 20px -2px rgba(255, 71, 87, 0.5);
 }
 
+/* Base Styles */
 html,
 body {
   min-height: 100%;
   overflow-x: hidden;
+  background: var(--background);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
   background-color: var(--gray-999);
-  background: var(--background);
   color: var(--gray-200);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  transition: background-color var(--theme-transition), color var(--theme-transition);
 }
 
 *,
@@ -152,10 +197,17 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 a {
   color: var(--link-color);
+  text-decoration: none;
+  transition: color var(--theme-transition);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1,
@@ -167,6 +219,7 @@ h5 {
   font-family: var(--font-brand);
   font-weight: 600;
   color: var(--gray-100);
+  transition: color var(--theme-transition);
 }
 
 h1 {
@@ -190,7 +243,6 @@ h5 {
 }
 
 /* Utilities */
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -267,3 +319,32 @@ h5 {
   }
 }
 
+/* Theme Transition Smoothing */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  z-index: -2;
+  transition: background var(--theme-transition);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--gray-999);
+  z-index: -1;
+  opacity: 0.9;
+  transition: background-color var(--theme-transition), opacity var(--theme-transition);
+}
+
+.theme-dark body::after {
+  opacity: 0.95;
+}
