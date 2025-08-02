@@ -15,35 +15,29 @@
   --gray-900: #f3f4f7;
   --gray-999: #ffffff;
 
-  /* Paleta de rojos mejorada */
-  --accent-50: #fff0f0;
-  --accent-100: #ffd8d8;
-  --accent-200: #ffb8b8;
-  --accent-300: #ff9494;
-  --accent-400: #ff6b6b;  /* Light */
-  --accent-500: #ff4757;  /* Regular */
-  --accent-600: #ff2d2d;  /* Dark */
-  --accent-700: #e03131;
-  --accent-800: #c92a2a;
-  --accent-900: #a51d1d;
-  
+  /* Paleta de acento verde azulado con variaciones */
+  --accent-50: #e6f2f2; /* Muy claro */
+  --accent-100: #b3d6d6; /* Claro */
+  --accent-200: #80baba; /* Más claro */
+  --accent-300: #4d9e9e; /* Intermedio claro */
+  --accent-400: #3a6d6d; /* Base */
+  --accent-500: #345f5f; /* Regular */
+  --accent-600: #2d5151; /* Oscuro */
+  --accent-700: #264343; /* Más oscuro */
+  --accent-800: #1f3535; /* Muy oscuro */
+  --accent-900: #182727; /* Casi negro */
+
   --accent-light: var(--accent-400);
   --accent-regular: var(--accent-500);
   --accent-dark: var(--accent-600);
-  --accent-overlay: hsla(355, 100%, 68%, 0.33);
-  --accent-subtle-overlay: hsla(354, 100%, 54%, 0.18);
+  --accent-overlay: hsla(180, 30%, 33%, 0.33);
+  --accent-subtle-overlay: hsla(180, 30%, 33%, 0.18);
   --accent-text-over: var(--gray-999);
 
   /* Fondos */
-  --background: radial-gradient(125% 125% at 50% 90%, #fff 40%, #475569 100%);
+  --background: #ffffff;
   --surface: var(--gray-999);
-  --surface-elevated: linear-gradient(
-    to bottom,
-    var(--gray-999),
-    var(--gray-900)
-  );
-
-  
+  --surface-elevated: var(--gray-900);
 
   /* Gradientes */
   --gradient-stop-1: var(--accent-400);
@@ -109,33 +103,29 @@
   --gray-900: #141925;
   --gray-999: #090b11;
 
-  /* Rojos con más contraste */
-  --accent-50: #2a0505;
-  --accent-100: #4a0a0a;
-  --accent-200: #6f0f0f;
-  --accent-300: #9e1a1a;
-  --accent-400: #ff6b6b;  /* Light */
-  --accent-500: #ff4757;  /* Regular */
-  --accent-600: #e03131;  /* Dark */
-  --accent-700: #c92a2a;
-  --accent-800: #a51d1d;
-  --accent-900: #7a1515;
-  
+  /* Verde azulado con variaciones para tema oscuro */
+  --accent-50: #182727; /* Muy oscuro */
+  --accent-100: #1f3535; /* Más oscuro */
+  --accent-200: #264343; /* Oscuro */
+  --accent-300: #2d5151; /* Intermedio oscuro */
+  --accent-400: #345f5f; /* Base */
+  --accent-500: #3a6d6d; /* Regular */
+  --accent-600: #4d9e9e; /* Claro */
+  --accent-700: #80baba; /* Más claro */
+  --accent-800: #b3d6d6; /* Muy claro */
+  --accent-900: #e6f2f2; /* Casi blanco */
+
   --accent-light: var(--accent-400);
   --accent-regular: var(--accent-500);
   --accent-dark: var(--accent-600);
-  --accent-overlay: hsla(355, 100%, 68%, 0.25);
-  --accent-subtle-overlay: hsla(354, 100%, 54%, 0.15);
+  --accent-overlay: hsla(180, 30%, 33%, 0.25);
+  --accent-subtle-overlay: hsla(180, 30%, 33%, 0.15);
   --accent-text-over: #ffffff;
 
   /* Fondos oscuros */
-  --background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255, 80, 120, 0.15), transparent 70%), #000000;
+  --background: #090b11;
   --surface: var(--gray-999);
-  --surface-elevated: linear-gradient(
-    to bottom,
-    var(--gray-999),
-    var(--gray-900)
-  );
+  --surface-elevated: var(--gray-900);
 
   /* Gradientes oscuros */
   --gradient-stop-1: var(--accent-600);
@@ -184,7 +174,8 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  transition: background-color var(--theme-transition), color var(--theme-transition);
+  transition: background-color var(--theme-transition),
+    color var(--theme-transition);
 }
 
 *,
@@ -321,7 +312,7 @@ h5 {
 
 /* Theme Transition Smoothing */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -333,7 +324,7 @@ body::before {
 }
 
 body::after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -342,7 +333,8 @@ body::after {
   background-color: var(--gray-999);
   z-index: -1;
   opacity: 0.9;
-  transition: background-color var(--theme-transition), opacity var(--theme-transition);
+  transition: background-color var(--theme-transition),
+    opacity var(--theme-transition);
 }
 
 .theme-dark body::after {

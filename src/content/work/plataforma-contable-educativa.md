@@ -65,7 +65,6 @@ Visualizar cómo funciona la plataforma en acción con este video explicativo:
     title="Video de YouTube"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
     style="border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);"
   ></iframe>
 </div>
