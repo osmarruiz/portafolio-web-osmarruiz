@@ -153,7 +153,10 @@ const iconLinks: {
       // Cierre automático al hacer clic fuera del menú en móvil
       document.addEventListener("click", (e) => {
         if (!menu.hidden && window.innerWidth < 800) {
-          if (!menu.contains(e.target as Node) && !btn.contains(e.target as Node)) {
+          if (
+            !menu.contains(e.target as Node) &&
+            !btn.contains(e.target as Node)
+          ) {
             setExpanded(false);
           }
         }
@@ -287,6 +290,9 @@ const iconLinks: {
   .social:hover,
   .social:focus {
     color: var(--accent-text-over);
+    background-color: var(--accent-regular);
+    border-radius: 999rem;
+    opacity: 0.7;
   }
 
   .theme-toggle {

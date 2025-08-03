@@ -1,22 +1,22 @@
 ---
-title: 🎨 Aplicación de Matrículas para Escuela de Bellas Artes
+title: 🎨 Sistema Control De Matrículas Para Escuela
 publishDate: 2020-03-02 00:00:00
-img: /assets/works/aplicacion-control-matricula.webp
-img_hover: /assets/works/aplicacion-control-matricula-hover.webp
+img: /assets/works/matricula.webp
+img_hover: /assets/works/matricula-hover.webp
 img_alt: Interfaz moderna para una aplicación académica enfocada en artes
 description: |
-  Aplicación web desarrollada con React y APIs en Go para gestionar matrículas, estudiantes y transacciones en una escuela de bellas artes.
+  Sistema desarrollado con React y APIs en GO para gestionar matrículas, estudiantes y transacciones en una escuela de bellas artes.
 tags:
-  - Desarrollador
-  - Diseñador
   - React
+  - Typescript
+  - Api Rest (GO)
 ---
 
-### 🎨 Aplicación de Matrículas para Escuela de Bellas Artes
+### 🎨 Sistema Control De Matrículas Para Escuela
 
 **Una solución digital para organizar el arte.**
 
-Esta aplicación web fue creada para una escuela de bellas artes que ofrece cursos de danza, pintura, música y más. Su objetivo es facilitar la gestión de estudiantes, tutores, matrículas y transacciones de una forma ordenada, moderna y accesible. El frontend fue desarrollado con **React**, mientras que el backend, encargado de las APIs REST, fue construido en **Go**.
+Este sistema fue creado para una escuela de bellas artes que ofrece cursos de danza, pintura, música y más. Su objetivo es facilitar la gestión de estudiantes, tutores, matrículas y transacciones de una forma ordenada, moderna y accesible. El frontend fue desarrollado con **React**, mientras que el backend, encargado de las APIs REST, fue construido en **GO**.
 
 > 💬 *"El arte inspira, pero también se administra. Esta herramienta conecta ambos mundos con estilo."*
 
@@ -53,21 +53,21 @@ La aplicación abarca todas las necesidades administrativas de una institución 
 
 ### 🖼️ Galería de imágenes
 
-Una muestra visual de las secciones y diseño de la aplicación de control de matrículas:
+Una muestra visual de las secciones y diseño del sistema control de matrículas:
 
 <!-- Galería -->
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px;">
-  <img src="/assets/works/aplicacion-control-matricula-hover.webp" alt="Pantalla principal"
+  <img src="/assets/works/matricula-hover.webp" alt="Pantalla principal"
     onclick="openModal(this.src)" class="galeria-img">
-  <img src="/assets/works/aplicacion-control-matricula-2.webp" alt="Registro estudiantes"
+  <img src="/assets/works/matricula-2.webp" alt="Registro estudiantes"
     onclick="openModal(this.src)" class="galeria-img">
-  <img src="/assets/works/aplicacion-control-matricula-5.webp" alt="Perfil tutor"
+  <img src="/assets/works/matricula-5.webp" alt="Perfil tutor"
     onclick="openModal(this.src)" class="galeria-img">
-  <img src="/assets/works/aplicacion-control-matricula-3.webp" alt="Gestión cursos"
+  <img src="/assets/works/matricula-3.webp" alt="Gestión cursos"
     onclick="openModal(this.src)" class="galeria-img">
-  <img src="/assets/works/aplicacion-control-matricula-4.webp" alt="Perfil tutor 2"
+  <img src="/assets/works/matricula-4.webp" alt="Perfil tutor 2"
     onclick="openModal(this.src)" class="galeria-img">
-  <img src="/assets/works/aplicacion-control-matricula-6.webp" alt="Perfil tutor 3"
+  <img src="/assets/works/matricula-6.webp" alt="Perfil tutor 3"
     onclick="openModal(this.src)" class="galeria-img">
 </div>
 

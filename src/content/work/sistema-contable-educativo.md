@@ -1,22 +1,22 @@
 ---
-title: 📘 Plataforma Contable Educativa
+title: 📘 Sistema Contable Orientado a La Educación
 publishDate: 2020-03-02 00:00:00
-img: /assets/works/plataforma-contable-educativa.webp
-img_hover: /assets/works/plataforma-contable-educativa-hover.webp
-img_alt: Interfaz moderna de una plataforma contable educativa
+img: /assets/works/contable.webp
+img_hover: /assets/works/contable-hover.webp
+img_alt: Interfaz moderna de un Sistema Contable Orientado a La Educación
 description: |
-  Una plataforma web desarrollada en .NET que refuerza las competencias contables en estudiantes mediante la práctica interactiva.
+  Sistema web desarrollado en .NET que refuerza las competencias contables en estudiantes mediante la práctica interactiva.
 tags:
-  - Desarrollador
-  - Diseñador
   - .Net
+  - C#
+  - MVC
 ---
 
-### 📘 Plataforma Contable Educativa
+### 📘 Sistema Contable Orientado a La Educación
 
 **Una herramienta interactiva para transformar el aprendizaje contable.**
 
-Esta plataforma web, desarrollada con tecnologías modernas como **.NET**, tiene como propósito principal fortalecer las competencias contables en estudiantes de forma práctica, intuitiva y accesible desde cualquier dispositivo. A través de simulaciones reales, permite gestionar transacciones, generar reportes financieros y comprender a fondo la lógica contable.
+Este sistema web, desarrollado con tecnologías modernas como **.NET**, tiene como propósito principal fortalecer las competencias contables en estudiantes de forma práctica, intuitiva y accesible desde cualquier dispositivo. A través de simulaciones reales, permite gestionar transacciones, generar reportes financieros y comprender a fondo la lógica contable.
 
 > 💬 _"La educación financiera y contable es la clave para una gestión efectiva de los recursos en cualquier organización."_
 
@@ -46,7 +46,6 @@ La plataforma ofrece un entorno de simulación realista que facilita la comprens
 Esta solución aprovecha lo mejor de las tecnologías web modernas:
 
 - 💻 **Lenguajes**: C#, JavaScript
-- 🧱 **Plataforma principal**: .NET
 - 🗄️ **Base de datos**: PostgreSQL
 - 🎨 **Interfaces de usuario**: Razor Pages, Bootstrap
 - 🌐 **Compatibilidad**: Interfaz responsive y accesible desde cualquier navegador moderno o dispositivo móvil
@@ -55,7 +54,7 @@ Esta solución aprovecha lo mejor de las tecnologías web modernas:
 
 ### 🎥 Demostración en video
 
-Visualizar cómo funciona la plataforma en acción con este video explicativo:
+Visualizar cómo funciona el sistema en acción con este video:
 
 <div style="max-width: 960px; margin: auto;">
   <iframe

@@ -1,19 +1,18 @@
 ---
-title: "💸 Sistema de Microfinanzas para Gestión de Préstamos y Cobros"
+title: "💸 Sistema Control De Préstamos Para Microfinancieras"
 publishDate: 2025-08-01 00:00:00
-img: /assets/works/aplicacion-microfinanzas.webp
-img_hover: /assets/works/aplicacion-microfinanzas-hover.webp
+img: /assets/works/microfinanzas.webp
+img_hover: /assets/works/microfinanzas-hover.webp
 img_alt: Interfaz moderna para gestión de préstamos y cobros
 description: |
-  Aplicación web desarrollada con ASP.NET Core MVC y PostgreSQL para administrar préstamos, clientes, pagos, cobranzas y reportes en instituciones de microfinanzas.
+  Sistema desarrollado con .Net MVC para administrar préstamos, clientes, pagos, cobranzas y reportes en instituciones de microfinanzas.
 tags:
-  - Desarrollador
-  - Backend
-  - ASP.NET Core
-  - PostgreSQL
+  - .Net
+  - C#
+  - MVC
 ---
 
-# 💸 Sistema de Microfinanzas para Gestión de Préstamos y Cobros
+### 💸 Sistema Control De Préstamos Para Microfinancieras
 
 **Una solución digital para instituciones financieras que impulsan el crecimiento.**
 
@@ -23,7 +22,7 @@ Este sistema permite gestionar clientes, préstamos, pagos, cobranzas y reportes
 
 ---
 
-## 🛠️ Funcionalidades principales
+### 🛠️ Funcionalidades principales
 
 - 👤 **Gestión de clientes**  
   Registro y edición de datos personales, identificación y relaciones con préstamos.
@@ -48,7 +47,7 @@ Este sistema permite gestionar clientes, préstamos, pagos, cobranzas y reportes
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+### ⚙️ Tecnologías utilizadas
 
 - 🖥️ **Backend**: ASP.NET Core MVC  
 - 🗄️ **Base de datos**: PostgreSQL  
@@ -61,7 +60,7 @@ Este sistema permite gestionar clientes, préstamos, pagos, cobranzas y reportes
 
 ### 🎥 Demostración en video
 
-Visualizar cómo la aplicación en acción con este video explicativo:
+Visualizar el sistema en acción con este video:
 
 <div style="max-width: 960px; margin: auto;">
   <iframe
